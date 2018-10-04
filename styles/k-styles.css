@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: 'Athelas', sans-serif;
+	background-color: white;
+	margin: 0px;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #FEB631;
+    padding: 20px 20px;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px; 
+    line-height: 25px;
+    border-radius: 2px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo img{
+    height: 30px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+    color: black;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+@media screen and (max-width: 500px) {
+  .header a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+  .header-right {
+      float: none;
+  }
+}
+
+.tekst div h2{
+	font-size: 35px;
+	padding-left: 21%;
+}
+
+.tekst div h3{ 
+	padding-left: 9.5%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px; /* Rounded borders */
+    box-sizing: border-box;/* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.container{
+	width: 50%;
+	margin-left: 2%;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: darkgray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #FEB631;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+.insta{
+	width: 80px;
+	float: right;
+}
+
+.pinter{
+	width: 83px;
+	float: right;
+}
+
+.linked{
+	width: 88px;
+	float: right;	
+}
+
+.copy{
+	color: gray;
+	text-align: center;
+	margin-top: 85px;;
+}
+
+.social{
+	margin-right: 15%;
+}
+
+
